@@ -1,0 +1,236 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+.clear{
+    *zoom: 1;
+}
+.clear:after{
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+}
+html{
+    font-size: 62.5%;
+    background: #eeeeee;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+}
+.header_box{
+    background: rgb(255, 255, 255);
+    height: 70px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 1px 1px;
+}
+#header>div:first-of-type{
+    padding-top: 15px;
+    float: left;
+}
+.logo{
+    display: block;
+    width: 144px;
+    height: 48px;
+}
+.logo img{
+    display: block;
+    width: 144px;
+    height: auto;
+}
+.header_nav{
+    float: left;
+    margin-left: 40px;
+}
+.header_nav li a{
+    color: #333333;
+    font-size: 1.6rem;
+    text-decoration: none;
+    line-height: 67px;
+    display: block;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
+.header_nav li:hover a{
+    color: #f8a900;
+}
+.header_nav li:first-of-type a{
+    color: #f8a900;
+    border-bottom: 3px solid #f8a900;
+    padding: 0 10px 0 10px;
+}
+.text{
+    width: 150px;
+    height: 30px;
+    border: 1px solid #dbdbdb;
+    border-right: 0;
+    box-sizing: border-box;
+    float: left;
+    padding-left: 10px;
+}
+.text:focus{
+    outline: none;
+}
+.submit{
+    width: 30px;
+    height: 30px;
+    border: 1px solid #dbdbdb;
+    border-left: 0;
+    background: transparent url("../images/search.png") no-repeat;
+    float: left;
+}
+.submit:focus{
+    outline: none;
+}
+.submit:hover{
+    cursor: pointer;
+}
+.p_r{
+    float: right;
+}
+.p_r a{
+    font-size: 1.2rem;
+    line-height: 67px;
+    color: #333333;
+    margin-left: 20px;
+}
+.p_r a:hover{
+    text-decoration: underline;
+}
+.banner img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.yBox{
+    display: none;
+    float: right;
+}
+.search:before{
+    font-size: 2.8rem;
+    line-height: 70px;
+    text-align: center;
+    color: #B5B5B5;
+    font-weight: lighter;
+    padding-left: 10px;
+}
+.menu:before{
+    font-size: 2.8rem;
+    line-height: 70px;
+    text-align: center;
+    color: #B5B5B5;
+    font-weight: lighter;
+    padding-left: 20px;
+}
+/*-------------------------------------*/
+.hot{
+    height: 100px;
+    margin: 0 auto;
+}
+@media screen and (min-width: 1200px){
+    .wd{
+        width: 1170px;
+    }
+    #header{
+        border-top: 1px solid transparent;
+        margin: 0 auto;
+    }
+    .form{
+        float: right;
+        margin: 18px 30px 0 0;
+    }
+    .header_nav li{
+        float: left;
+        list-style: none;
+        padding: 0 20px 0 20px;
+    }
+    .banner{
+        display: block;
+        margin: 20px auto;
+    }
+}
+@media screen and (min-width: 992px) and (max-width: 1200px){
+    .wd{
+        width: 970px;
+    }
+    #header{
+        border-top: 1px solid transparent;
+        margin: 0 auto;
+    }
+    .form{
+        float: right;
+        margin: 18px 5px 0 0;
+    }
+    .header_nav li{
+        float: left;
+        list-style: none;
+        padding: 0 20px 0 10px;
+    }
+    .banner{
+        display: block;
+        margin: 20px auto;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 992px){
+    .wd{
+        width: 95%;
+    }
+    #header{
+        border-top: 1px solid transparent;
+        margin: 0 auto;
+    }
+    .form{
+        display: none;
+    }
+    .header_nav{
+        display: none;
+    }
+    .p_r{
+        display: none;
+    }
+    .banner{
+        display: block;
+        margin: 20px auto;
+    }
+    .yBox{
+        display: block;
+    }
+    @media screen and (max-width: 860px){
+        .banner{
+            display: none;
+        }
+    }
+}
+@media screen and (max-width: 768px){
+    .wd{
+        width: 95%;
+    }
+    #header{
+        border-top: 1px solid transparent;
+        margin: 0 auto;
+    }
+    .form{
+        display: none;
+    }
+    .header_nav{
+        display: none;
+    }
+    .p_r{
+        display: none;
+    }
+    .banner{
+        display: none;
+    }
+    .yBox{
+        display: block;
+    }
+}
